@@ -1,7 +1,7 @@
 # Major Prompts and Tools Used
 ## 1. Tool Used: Gemini 
 ### Key Prompts Ran:
-- "What happen if the transaction_time is more than due_date? "
+- "One of dataframe column have variety of date format. Can you standardize the date format?"
 - "my data dont have expected_amounts. So, we need to rely base on data we had.Can you find other solution?"
 - "Can you ellaborate how standard deviation formula can find incossistent payment?"
 - "One of the column my dataframe using json structure.Please advice how to manipulate that column using struct type?"
@@ -22,6 +22,6 @@ You are required to show at least two instances where the AI fell short and how 
 - The Action Taken: I rewrite the path layout and redirected the storage architecture to utilize native cloud object storage via DBFS (dbfs:/FileStore/tables/...) and registered it as a managed workspace Delta table. This ensured the pipeline complied with modern data lakehouse best practices.
 ### 4. Engineering Reflection
 
-In this assignment, I trusted the AI to support data manipulation, mathematical definitions, and high-level syntax structures. For instance, translating business logic into a chain of PySpark functions like datediff() and handling standard deviation calculations for behavioral profiles to saved significant implementation time.
-However, I strictly refused to trust the AI when it came to understanding my underlying data schema, data types and cluster infrastructure security rules. AI tools easily to generate code based on assumptions, frequently inventing columns or misinterpreting structural data types like JSON Structs. 
-At the end, this exercise reinforced that while an AI tools is an incredibly efficient execution companion for writing structural code blocks quickly and advisor,but it cannot replace an engineer's and domain expert role in understanding data,schema validation, debugging system-level stack traces, and enforcing cloud infrastructure realities. AI collabration are require to encourage our mindset to become code reviewer.
+In this assignment, I trusted the AI to support data manipulation, mathematical definitions and high-level syntax structures. For instance, translating business logic into a code of PySpark functions like datediff() and handling standard deviation calculations for behavioral profiles to saved significant implementation time.
+However, I strictly refused to trust the AI when it came to understanding my underlying data schema, data types and cluster infrastructure security rules. AI tools easily to generate code based on assumptions, frequently enhancing the columns or misinterpreting structural data types like JSON Structs. 
+At the end, this exercise required extra time and effort but with AI support, it will reduce the burden. While an AI tools is serves as an excellent execution comapnion for rapidly writing structural code blocks quickly and acting as prelimenery reviewer,but it cannot replace an engineer's and domain expert role in understanding data,schema validation, debugging system-level stack traces, and enforcing cloud infrastructure realities. AI collabration are require to encourage our mindset to become code reviewer.
